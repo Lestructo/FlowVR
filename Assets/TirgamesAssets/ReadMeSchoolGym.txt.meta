@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6e3886b47913f854ab3c94f3356f7dad
+timeCreated: 1485443492
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 81500
+  packageName: School Gym
+  packageVersion: 1.2
+  assetPath: Assets/TirgamesAssets/ReadMeSchoolGym.txt
+  uploadId: 409387

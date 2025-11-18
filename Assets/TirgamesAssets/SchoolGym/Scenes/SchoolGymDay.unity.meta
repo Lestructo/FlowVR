@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e6a6468f9e0d40943bbfd83ad00172de
+timeCreated: 1484566701
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 81500
+  packageName: School Gym
+  packageVersion: 1.2
+  assetPath: Assets/TirgamesAssets/SchoolGym/Scenes/SchoolGymDay.unity
+  uploadId: 409387
