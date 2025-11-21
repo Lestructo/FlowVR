@@ -6,10 +6,10 @@ public class BallBasketFiller : MonoBehaviour
     public GameObject ballPrefab;
     public Transform basketCenter;
 
-    public float radius = 0.15f;       // half-width of the basket interior
-    public float spawnHeight = 0.5f;   // spawning Y offset above basket center
-    public float fillHeight = 0.6f;    // height at which basket is considered "full"
-    public float spawnDelay = 0.2f;    // time between spawns
+    public float radius = 0.1f;       // half-width of the basket interior
+    public float spawnHeight = 0.3f;   // spawning Y offset above basket center
+    public float fillHeight = 0.3f;    // height at which basket is considered "full"
+    public float spawnDelay = 0.1f;    // time between spawns
 
     public LayerMask ballMask;         // ONLY the Ball layer
     public LayerMask handMask;         // Ignore Raycast layer (your hands)
