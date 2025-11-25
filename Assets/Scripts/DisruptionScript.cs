@@ -25,12 +25,12 @@ public class DisruptionScript : MonoBehaviour
 
     IEnumerator TimerRoutine()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(45f);
 
         foreach (var col in racketColliders)
             Physics.IgnoreCollision(ballCollider, col, true);
 
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(15f);
 
         foreach (var col in racketColliders)
             Physics.IgnoreCollision(ballCollider, col, false);
