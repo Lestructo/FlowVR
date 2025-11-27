@@ -6,13 +6,21 @@ public class BallSounds : MonoBehaviour
     public AudioClip hitSound;
 
     [Header("Volumes")]
-    public float defaultVolume = 0.5f;
-    public float racketVolume = 0.1f;
+    public float baseVolume = 0.1f;      
+    public float volumeMultiplier = 0.25f;
 
     [Header("Physics Threshold")]
     public float minVelocityForSound = 0.5f;
 
+    [Header("Pitch Randomization")]
+    public float pitchMin = 0.95f;
+    public float pitchMax = 1.05f;
+
+    [Header("Cooldown")]
+    public float cooldown = 0.1f;
+
     private AudioSource audioSource;
+    private float lastSound = -10f;
 
     private void Start()
     {
@@ -21,22 +29,25 @@ public class BallSounds : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Skip collisions with other balls
+        // Ignore other balls
         if (collision.collider.CompareTag("Ball"))
             return;
 
-        // total collision speed based on relative rigidbody motion
-        float impactVelocity = collision.relativeVelocity.magnitude;
-
-        // Skip tiny bumps
-        if (impactVelocity < minVelocityForSound)
+        // Cooldown
+        if (Time.time - lastSound < cooldown)
             return;
 
-        // Pick volume
-        float volume = collision.collider.CompareTag("Racket")
-            ? racketVolume
-            : defaultVolume;
+        float v = collision.relativeVelocity.magnitude;
+        if (v < minVelocityForSound)
+            return;
+
+        // Normal "environment collision" volume
+        float volume = Mathf.Clamp(baseVolume + v * volumeMultiplier, 0f, 1f);
+
+        // Random pitch variation
+        audioSource.pitch = Random.Range(pitchMin, pitchMax);
 
         audioSource.PlayOneShot(hitSound, volume);
+        lastSound = Time.time;
     }
 }

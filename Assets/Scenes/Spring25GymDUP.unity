@@ -912,9 +912,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &19839635
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1727,9 +1730,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &59051305
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2238,9 +2244,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &73846864
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2544,9 +2553,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &75289269
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3077,9 +3089,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &96708116
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3562,9 +3577,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &116236351
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3962,9 +3980,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &122557614
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4393,9 +4414,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &138634078
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5693,9 +5717,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &200163314
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6147,9 +6174,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &203946632
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6916,9 +6946,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &253280029
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8098,9 +8131,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &329433141
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8597,9 +8633,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &387007648
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11561,9 +11600,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: c63a86243466eb74f9da2e5ea743a28a, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.5
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.9
+  pitchMax: 1.1
+  cooldown: 0.1
 --- !u!82 &466426721
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12342,9 +12384,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &538253931
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12742,9 +12787,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &539220351
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13395,9 +13443,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &545308288
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13915,9 +13966,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &563264057
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14315,9 +14369,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &576162973
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14715,9 +14772,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &583164685
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15219,9 +15279,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &599535818
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15708,9 +15771,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &630640739
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16197,9 +16263,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &660776194
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16597,9 +16666,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &666233991
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17094,9 +17166,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &672391635
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17525,9 +17600,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &690964549
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17925,9 +18003,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &693299480
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18382,9 +18463,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &727675310
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26252,9 +26336,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &757687090
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26652,9 +26739,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &764580775
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27052,9 +27142,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &766280087
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27545,9 +27638,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &791515387
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28092,9 +28188,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &801474087
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28554,9 +28653,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &840712187
 AudioSource:
   m_ObjectHideFlags: 0
@@ -36510,9 +36612,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &883119738
 AudioSource:
   m_ObjectHideFlags: 0
@@ -37298,9 +37403,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &960973300
 AudioSource:
   m_ObjectHideFlags: 0
@@ -38251,9 +38359,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1009955547
 AudioSource:
   m_ObjectHideFlags: 0
@@ -39345,9 +39456,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1134054934
 AudioSource:
   m_ObjectHideFlags: 0
@@ -63048,9 +63162,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1160722595
 AudioSource:
   m_ObjectHideFlags: 0
@@ -63510,9 +63627,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1170456424
 AudioSource:
   m_ObjectHideFlags: 0
@@ -63910,9 +64030,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1170500770
 AudioSource:
   m_ObjectHideFlags: 0
@@ -75328,9 +75451,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1180626578
 AudioSource:
   m_ObjectHideFlags: 0
@@ -76953,9 +77079,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1202639000
 AudioSource:
   m_ObjectHideFlags: 0
@@ -77201,9 +77330,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: c63a86243466eb74f9da2e5ea743a28a, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.5
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.9
+  pitchMax: 1.1
+  cooldown: 0.1
 --- !u!82 &1206271546
 AudioSource:
   m_ObjectHideFlags: 0
@@ -77772,9 +77904,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1249421826
 AudioSource:
   m_ObjectHideFlags: 0
@@ -78672,9 +78807,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1297245910
 AudioSource:
   m_ObjectHideFlags: 0
@@ -78785,6 +78923,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DisruptionScript
   racketRoot: {fileID: 1932901623}
+--- !u!1001 &1307615323
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.68901
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7595
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.35364
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_Name
+      value: XR Device Simulator
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
 --- !u!1 &1309594004
 GameObject:
   m_ObjectHideFlags: 0
@@ -79103,9 +79298,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1313443076
 AudioSource:
   m_ObjectHideFlags: 0
@@ -79695,9 +79893,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1363625165
 AudioSource:
   m_ObjectHideFlags: 0
@@ -80095,9 +80296,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1369461888
 AudioSource:
   m_ObjectHideFlags: 0
@@ -80495,9 +80699,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1374489441
 AudioSource:
   m_ObjectHideFlags: 0
@@ -81023,9 +81230,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1471045555
 AudioSource:
   m_ObjectHideFlags: 0
@@ -81428,9 +81638,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1471364062
 AudioSource:
   m_ObjectHideFlags: 0
@@ -94506,9 +94719,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1600764529
 AudioSource:
   m_ObjectHideFlags: 0
@@ -95003,9 +95219,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1619169121
 AudioSource:
   m_ObjectHideFlags: 0
@@ -95403,9 +95622,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1625527156
 AudioSource:
   m_ObjectHideFlags: 0
@@ -96256,9 +96478,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1654923046
 AudioSource:
   m_ObjectHideFlags: 0
@@ -97175,9 +97400,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1722630632
 AudioSource:
   m_ObjectHideFlags: 0
@@ -97691,9 +97919,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1780703494
 AudioSource:
   m_ObjectHideFlags: 0
@@ -98091,9 +98322,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1822603709
 AudioSource:
   m_ObjectHideFlags: 0
@@ -100467,6 +100701,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1953522921974109789, guid: 2b8e3ee22df5a914eb9b9d996793fd8d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1932901624}
+    - targetCorrespondingSourceObject: {fileID: 1953522921974109789, guid: 2b8e3ee22df5a914eb9b9d996793fd8d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1932901634}
+    - targetCorrespondingSourceObject: {fileID: 1953522921974109789, guid: 2b8e3ee22df5a914eb9b9d996793fd8d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1932901633}
   m_SourcePrefab: {fileID: 100100000, guid: 2b8e3ee22df5a914eb9b9d996793fd8d, type: 3}
 --- !u!4 &1932901622 stripped
 Transform:
@@ -100780,6 +101020,126 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &1932901633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932901623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f15a5c95859de44b7e73a56be2d81c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RacketHitSound
+  racketHitSound: {fileID: 8300000, guid: 1f565d77c17957e4f84516b7387af74e, type: 3}
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
+  pitchMin: 0.95
+  pitchMax: 1.05
+  vibrateLeft: 1
+  vibrateRight: 1
+  minHaptic: 0.1
+  maxHaptic: 0.5
+  hapticDuration: 0.1
+  cooldown: 0.1
+--- !u!82 &1932901634
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932901623}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1946676649
 GameObject:
   m_ObjectHideFlags: 0
@@ -101067,9 +101427,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1946676658
 AudioSource:
   m_ObjectHideFlags: 0
@@ -101498,9 +101861,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1982777727
 AudioSource:
   m_ObjectHideFlags: 0
@@ -101960,9 +102326,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &1995406825
 AudioSource:
   m_ObjectHideFlags: 0
@@ -102441,9 +102810,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &2006897223
 AudioSource:
   m_ObjectHideFlags: 0
@@ -102841,9 +103213,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &2018812313
 AudioSource:
   m_ObjectHideFlags: 0
@@ -103330,9 +103705,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &2027067007
 AudioSource:
   m_ObjectHideFlags: 0
@@ -103761,9 +104139,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &2041238081
 AudioSource:
   m_ObjectHideFlags: 0
@@ -104035,9 +104416,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: c63a86243466eb74f9da2e5ea743a28a, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.5
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.9
+  pitchMax: 1.1
+  cooldown: 0.1
 --- !u!82 &2051676080
 AudioSource:
   m_ObjectHideFlags: 0
@@ -105740,9 +106124,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &2079681018
 AudioSource:
   m_ObjectHideFlags: 0
@@ -106140,9 +106527,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &2080552769
 AudioSource:
   m_ObjectHideFlags: 0
@@ -106571,9 +106961,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &2088956103
 AudioSource:
   m_ObjectHideFlags: 0
@@ -107064,9 +107457,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallSounds
   hitSound: {fileID: 8300000, guid: be0f8c9d98cf19047a7cb1a08bc933e2, type: 3}
-  defaultVolume: 0.5
-  racketVolume: 1
+  baseVolume: 0.1
+  volumeMultiplier: 0.25
   minVelocityForSound: 0.5
+  pitchMin: 0.95
+  pitchMax: 1.05
+  cooldown: 0.1
 --- !u!82 &2126609059
 AudioSource:
   m_ObjectHideFlags: 0
@@ -107335,3 +107731,4 @@ SceneRoots:
   - {fileID: 1079413596}
   - {fileID: 375655425}
   - {fileID: 521014135}
+  - {fileID: 1307615323}
