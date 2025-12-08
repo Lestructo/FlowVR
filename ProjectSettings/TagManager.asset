@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Racket
   - Ball
+  - LeftHand
+  - RightHand
+  - Disruption
   layers:
   - Default
   - TransparentFX
