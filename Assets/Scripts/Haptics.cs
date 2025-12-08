@@ -3,9 +3,8 @@ using UnityEngine.XR;
 
 public class BallHaptics : MonoBehaviour
 {
-    [Header("Hand Transforms")]
-    public Transform leftHand;
-    public Transform rightHand;
+    [Header("Racket Reference")]
+    public FixedHandPlacement racketGrab;   // Drag your racket here
 
     [Header("Haptics Settings")]
     public float minVelocity = 0.5f;
@@ -20,8 +19,12 @@ public class BallHaptics : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Only trigger when racket hits ball
+        // Only trigger when racket hits the ball
         if (!collision.collider.CompareTag("Racket"))
+            return;
+
+        // Racket not being held → don't send haptics
+        if (racketGrab == null || !racketGrab.isHeld)
             return;
 
         // Global cooldown
@@ -40,26 +43,21 @@ public class BallHaptics : MonoBehaviour
     {
         float amp = Mathf.Clamp(velocity / 8f, minHaptic, maxHaptic);
 
-        float leftDist = Vector3.Distance(transform.position, leftHand.position);
-        float rightDist = Vector3.Distance(transform.position, rightHand.position);
-
-        // Choose closest hand
-        XRNode node = (leftDist < rightDist) ? XRNode.LeftHand : XRNode.RightHand;
-
-        Debug.Log($"[HAPTICS] Collision detected → LeftDist={leftDist:F3}, RightDist={rightDist:F3}, Closest={node}");
+        // Always use the hand holding the racket
+        XRNode node = racketGrab.holdingHand;
 
         InputDevice dev = InputDevices.GetDeviceAtXRNode(node);
 
         if (!dev.isValid)
         {
-            Debug.LogWarning($"[HAPTICS] Device for {node} is NOT valid. (Editor mode or no XR headset connected)");
+            Debug.LogWarning($"[HAPTICS] Device for {node} is NOT valid.");
             return;
         }
 
         bool sent = dev.SendHapticImpulse(0, amp, hapticDuration);
 
         Debug.Log(
-            $"[HAPTICS] SENT → Hand={node}, Amp={amp:F2}, Duration={hapticDuration:F2}, Velocity={velocity:F2}, Success={sent}"
+            $"[HAPTICS] Racket collision → Hand={node}, Amp={amp:F2}, Vel={velocity:F2}, Success={sent}"
         );
     }
 }

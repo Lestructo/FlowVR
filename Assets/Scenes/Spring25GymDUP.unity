@@ -554,6 +554,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 938723846}
   rightHandAttachTransform: {fileID: 1809442743}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &9437570
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -615,8 +617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -1421,6 +1422,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1402684149}
   rightHandAttachTransform: {fileID: 1794969056}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &13343689
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1482,8 +1485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -1782,6 +1784,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 2102281562}
   rightHandAttachTransform: {fileID: 511140493}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &37304232
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1843,8 +1847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -2036,431 +2039,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2004527552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &56857003
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 202364687, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_TagString
-      value: LeftHand
-      objectReference: {fileID: 0}
-    - target: {fileID: 1319746310, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1319746311, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1319746312, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1670256624, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_TagString
-      value: RightHand
-      objectReference: {fileID: 0}
-    - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_HDR
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_AllowMSAA
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: far clip plane
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 308999861788949463, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Name
-      value: XR Origin (XR Rig)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13.498
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.046
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.948
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99943584
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.007458668
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.032670196
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.002245943
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.846
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -3.747
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.285
-      objectReference: {fileID: 0}
-    - target: {fileID: 1763277165867629938, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Name
-      value: Left Near-Far Interactor
-      objectReference: {fileID: 0}
-    - target: {fileID: 1801942220539511183, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1801942220539511183, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_AimTargetObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1883230248363655243, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_FarAttachMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1883230248363655243, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_EnableFarCasting
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2141651114331267770, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2449787133337329425, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2449787133337329438, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2449787133337329439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2717550568034688974, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2717550568034688974, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_InteractorSourceObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3856033064218326565, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_InteractorSourceObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088110610454198647, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297486645847202297, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297486645847202297, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_InteractorSource
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4343660526480754339, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026116958134006009, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5033801203051696737, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_RayInteractors.Array.data[3].m_Interactor
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5663893676086941514, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_TeleportInteractor
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6499517531677593257, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6678509202150728127, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: 'm_StartingGroupMembers.Array.data[0]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6678509202150728127, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_StartingInteractionOverridesMap.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7876541752493187217, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8748500131873809389, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Name
-      value: Right Near-Far Interactor
-      objectReference: {fileID: 0}
-    - target: {fileID: 8877177980677234388, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_FarAttachMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8877177980677234388, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_EnableFarCasting
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2141651114331267770, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-    - {fileID: 2449787133337329425, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 202364688, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 1193750285}
-    - targetCorrespondingSourceObject: {fileID: 202364688, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 1265402014}
-    - targetCorrespondingSourceObject: {fileID: 1670256625, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 1927798566}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1767192433, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 56857007}
-    - targetCorrespondingSourceObject: {fileID: 202364687, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 56857011}
-    - targetCorrespondingSourceObject: {fileID: 1670256624, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 56857010}
-  m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
---- !u!4 &56857004 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1670256625, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-  m_PrefabInstance: {fileID: 56857003}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &56857005 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 202364688, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-  m_PrefabInstance: {fileID: 56857003}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &56857006 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1767192433, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-  m_PrefabInstance: {fileID: 56857003}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &56857007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56857006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23c1ce4fb46143f46bc5cb5224c934f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.HighDefinition.Runtime::UnityEngine.Rendering.HighDefinition.HDAdditionalCameraData
-  clearColorMode: 0
-  backgroundColorHDR: {r: 0.025, g: 0.07, b: 0.19, a: 0}
-  clearDepth: 1
-  volumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  volumeAnchorOverride: {fileID: 0}
-  antialiasing: 0
-  SMAAQuality: 2
-  dithering: 0
-  stopNaNs: 0
-  taaSharpenStrength: 0.5
-  TAAQuality: 1
-  taaSharpenMode: 0
-  taaRingingReduction: 0
-  taaHistorySharpening: 0.35
-  taaAntiFlicker: 0.5
-  taaMotionVectorRejection: 0
-  taaAntiHistoryRinging: 0
-  taaBaseBlendFactor: 0.875
-  taaJitterScale: 1
-  physicalParameters:
-    m_Iso: 200
-    m_ShutterSpeed: 0.005
-    m_Aperture: 16
-    m_FocusDistance: 10
-    m_BladeCount: 5
-    m_Curvature: {x: 2, y: 11}
-    m_BarrelClipping: 0.25
-    m_Anamorphism: 0
-  flipYMode: 0
-  xrRendering: 1
-  fullscreenPassthrough: 0
-  allowDynamicResolution: 0
-  customRenderingSettings: 0
-  invertFaceCulling: 0
-  probeLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  hasPersistentHistory: 0
-  screenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  screenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  allowDeepLearningSuperSampling: 1
-  deepLearningSuperSamplingUseCustomQualitySettings: 0
-  deepLearningSuperSamplingQuality: 0
-  deepLearningSuperSamplingUseCustomAttributes: 0
-  deepLearningSuperSamplingUseOptimalSettings: 1
-  deepLearningSuperSamplingSharpening: 0
-  allowFidelityFX2SuperResolution: 1
-  fidelityFX2SuperResolutionUseCustomQualitySettings: 0
-  fidelityFX2SuperResolutionQuality: 0
-  fidelityFX2SuperResolutionUseCustomAttributes: 0
-  fidelityFX2SuperResolutionUseOptimalSettings: 1
-  fidelityFX2SuperResolutionEnableSharpening: 0
-  fidelityFX2SuperResolutionSharpening: 0
-  fsrOverrideSharpness: 0
-  fsrSharpness: 0.92
-  exposureTarget: {fileID: 0}
-  materialMipBias: 0
-  m_RenderingPathCustomFrameSettings:
-    bitDatas:
-      data1: 5770166122053581
-      data2: 12934340311651418136
-    lodBias: 1
-    lodBiasMode: 0
-    lodBiasQualityLevel: 0
-    maximumLODLevel: 0
-    maximumLODLevelMode: 0
-    maximumLODLevelQualityLevel: 0
-    sssQualityMode: 0
-    sssQualityLevel: 0
-    sssCustomSampleBudget: 20
-    sssCustomDownsampleSteps: 0
-    msaaMode: 1
-    materialQuality: 0
-  renderingPathCustomFrameSettingsOverrideMask:
-    mask:
-      data1: 0
-      data2: 0
-  defaultFrameSettings: 0
-  m_Version: 9
-  m_ObsoleteRenderingPath: 0
-  m_ObsoleteFrameSettings:
-    overrides: 0
-    enableShadow: 0
-    enableContactShadows: 0
-    enableShadowMask: 0
-    enableSSR: 0
-    enableSSAO: 0
-    enableSubsurfaceScattering: 0
-    enableTransmission: 0
-    enableAtmosphericScattering: 0
-    enableVolumetrics: 0
-    enableReprojectionForVolumetrics: 0
-    enableLightLayers: 0
-    enableExposureControl: 1
-    diffuseGlobalDimmer: 0
-    specularGlobalDimmer: 0
-    shaderLitMode: 0
-    enableDepthPrepassWithDeferredRendering: 0
-    enableTransparentPrepass: 0
-    enableMotionVectors: 0
-    enableObjectMotionVectors: 0
-    enableDecals: 0
-    enableRoughRefraction: 0
-    enableTransparentPostpass: 0
-    enableDistortion: 0
-    enablePostprocess: 0
-    enableOpaqueObjects: 0
-    enableTransparentObjects: 0
-    enableRealtimePlanarReflection: 0
-    enableMSAA: 0
-    enableAsyncCompute: 0
-    runLightListAsync: 0
-    runSSRAsync: 0
-    runSSAOAsync: 0
-    runContactShadowsAsync: 0
-    runVolumeVoxelizationAsync: 0
-    lightLoopSettings:
-      overrides: 0
-      enableDeferredTileAndCluster: 0
-      enableComputeLightEvaluation: 0
-      enableComputeLightVariants: 0
-      enableComputeMaterialVariants: 0
-      enableFptlForForwardOpaque: 0
-      enableBigTilePrepass: 0
-      isFptlEnabled: 0
---- !u!1 &56857008 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670256624, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-  m_PrefabInstance: {fileID: 56857003}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &56857009 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 202364687, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-  m_PrefabInstance: {fileID: 56857003}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &56857010
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56857008}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!95 &56857011
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56857009}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8a64f47705cbe63428d153d52ae891cd, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &60728896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,6 +2443,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1192619620}
   rightHandAttachTransform: {fileID: 1964068508}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &66169679
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2926,8 +2506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -3341,6 +2920,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1130282151}
   rightHandAttachTransform: {fileID: 1313405619}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &89808674
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3402,8 +2983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -5283,6 +4863,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 2074061294}
   rightHandAttachTransform: {fileID: 284104207}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &189444770
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5344,8 +4926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -6053,6 +5634,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 2095798331}
   rightHandAttachTransform: {fileID: 935624116}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &221635616
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6114,8 +5697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -6671,6 +6253,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1587829691}
   rightHandAttachTransform: {fileID: 791352767}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &254381562
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6732,8 +6316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -7032,6 +6615,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1037573209}
   rightHandAttachTransform: {fileID: 2133388067}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &255480129
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7093,8 +6678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -8681,6 +8265,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 373093981}
   rightHandAttachTransform: {fileID: 2121987269}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &338499283
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8742,8 +8328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -9005,6 +8590,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 2147164520}
   rightHandAttachTransform: {fileID: 953486225}
+  holdingHand: 4
+  isHeld: 0
 --- !u!114 &348648310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9345,6 +8932,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1639949749}
   rightHandAttachTransform: {fileID: 640122190}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &356842044
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9406,8 +8995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -9768,6 +9356,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 214870128}
   rightHandAttachTransform: {fileID: 865100967}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &364643306
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9829,8 +9419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -10160,6 +9749,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1455223311}
   rightHandAttachTransform: {fileID: 267176362}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &375212534
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10221,8 +9812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -10870,6 +10460,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1825682216}
   rightHandAttachTransform: {fileID: 850953760}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &398541107
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10931,8 +10523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -13824,6 +13415,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 594109874}
   rightHandAttachTransform: {fileID: 587645033}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &480463500
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13885,8 +13478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -14327,6 +13919,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 429213777}
   rightHandAttachTransform: {fileID: 655946190}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &490228144
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14388,8 +13982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -15364,19 +14957,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0f15a5c95859de44b7e73a56be2d81c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RacketHitSound
-  racketHitSound: {fileID: 8300000, guid: 1f565d77c17957e4f84516b7387af74e, type: 3}
-  baseVolume: 0.05
-  volumeMultiplier: 0.2
-  pitchMin: 0.9
-  pitchMax: 1.1
-  minHaptic: 0.1
-  maxHaptic: 0.5
-  hapticDuration: 0.1
-  leftHandController: {fileID: 2147164520}
-  rightHandController: {fileID: 953486225}
-  cooldown: 0.5
-  audioSource: {fileID: 0}
-  lastSound: -10
 --- !u!82 &549207902
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15887,6 +15467,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 143925447}
   rightHandAttachTransform: {fileID: 1620709419}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &561247339
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15948,8 +15530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -16301,6 +15882,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 650627264}
   rightHandAttachTransform: {fileID: 939118807}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &577891477
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16362,8 +15945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -17414,6 +16996,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1402122883}
   rightHandAttachTransform: {fileID: 918792368}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &659698941
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17475,8 +17059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -18067,6 +17650,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 609264272}
   rightHandAttachTransform: {fileID: 1937743681}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &701351775
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18128,8 +17713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -18747,6 +18331,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1533627718}
   rightHandAttachTransform: {fileID: 1764328000}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &727120583
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18808,8 +18394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -26885,6 +26470,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 643687186}
   rightHandAttachTransform: {fileID: 760821938}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &843368525
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26946,8 +26533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -35138,6 +34724,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1718658535}
   rightHandAttachTransform: {fileID: 71615438}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &913049757
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35199,8 +34787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -35499,6 +35086,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1204227942}
   rightHandAttachTransform: {fileID: 512712976}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &913951283
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35560,8 +35149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -37167,6 +36755,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 320661049}
   rightHandAttachTransform: {fileID: 1350837399}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1030713416
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37228,8 +36818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -37528,6 +37117,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 671045228}
   rightHandAttachTransform: {fileID: 811162254}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1034987378
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37589,8 +37180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -38116,6 +37706,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 88426146}
   rightHandAttachTransform: {fileID: 356409412}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1074249520
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38177,8 +37769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -38477,6 +38068,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 973639383}
   rightHandAttachTransform: {fileID: 358331653}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1079286538
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38538,8 +38131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -62502,6 +62094,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 209675875}
   rightHandAttachTransform: {fileID: 1880611133}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1156563934
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -62563,8 +62157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -62863,6 +62456,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 632942754}
   rightHandAttachTransform: {fileID: 1956505834}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1164261733
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -62924,8 +62519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -63224,6 +62818,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 239840751}
   rightHandAttachTransform: {fileID: 342625325}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1166040158
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -63285,8 +62881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -75650,37 +75245,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 466368, guid: fd42e5b9b263821408c2aa5b5e320747, type: 3}
   m_PrefabInstance: {fileID: 1193711343}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1193750284
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1193750285}
-  m_Layer: 0
-  m_Name: Direct Interactor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1193750285
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1193750284}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 56857005}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1203895208
 GameObject:
   m_ObjectHideFlags: 0
@@ -75974,6 +75538,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 419965419}
   rightHandAttachTransform: {fileID: 1555031843}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1203895214
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -76035,8 +75601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -76579,6 +76144,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 224548500}
   rightHandAttachTransform: {fileID: 387959214}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1255313389
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -76640,155 +76207,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
   hapticDuration: 0.1
   hapticCooldown: 0.25
---- !u!1001 &1265402013
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 56857005}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0009
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      propertyPath: m_Name
-      value: LeftHand
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1265402019}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1265402018}
-    - targetCorrespondingSourceObject: {fileID: 8885931781525014449, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1265402017}
-  m_SourcePrefab: {fileID: 100100000, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
---- !u!4 &1265402014 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-  m_PrefabInstance: {fileID: 1265402013}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1265402015 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8885931781525014449, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-  m_PrefabInstance: {fileID: 1265402013}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1265402016 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bf7151579c38e2a44be94ba8773876c1, type: 3}
-  m_PrefabInstance: {fileID: 1265402013}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1265402017
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265402015}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1265402018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265402016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 075baa14d771ba44a9fb38842bbbd625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  handNode: 4
---- !u!95 &1265402019
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265402016}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1265901106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77803,6 +77227,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1542977400}
   rightHandAttachTransform: {fileID: 2079980680}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1378411654
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -77864,8 +77290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -78315,6 +77740,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 2132114196}
   rightHandAttachTransform: {fileID: 1551791972}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1416960373
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -78376,8 +77803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -78578,6 +78004,63 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.037
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1447095615
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5393041625813391551, guid: f521114c154f1eb45bd0becb2c7ffc1d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.476
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393041625813391551, guid: f521114c154f1eb45bd0becb2c7ffc1d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.041
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393041625813391551, guid: f521114c154f1eb45bd0becb2c7ffc1d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.043
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393041625813391551, guid: f521114c154f1eb45bd0becb2c7ffc1d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99943584
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393041625813391551, guid: f521114c154f1eb45bd0becb2c7ffc1d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.007458668
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393041625813391551, guid: f521114c154f1eb45bd0becb2c7ffc1d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.032670196
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393041625813391551, guid: f521114c154f1eb45bd0becb2c7ffc1d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.002245943
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393041625813391551, guid: f521114c154f1eb45bd0becb2c7ffc1d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.846
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393041625813391551, guid: f521114c154f1eb45bd0becb2c7ffc1d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -3.747
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393041625813391551, guid: f521114c154f1eb45bd0becb2c7ffc1d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.285
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802955025109058860, guid: f521114c154f1eb45bd0becb2c7ffc1d, type: 3}
+      propertyPath: m_Name
+      value: XR Origin (XR Rig) Before Changes
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f521114c154f1eb45bd0becb2c7ffc1d, type: 3}
 --- !u!1 &1452035558
 GameObject:
   m_ObjectHideFlags: 0
@@ -79080,6 +78563,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1677564574}
   rightHandAttachTransform: {fileID: 1631064712}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1492808942
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -79141,8 +78626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -92148,6 +91632,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1317012276}
   rightHandAttachTransform: {fileID: 289191480}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1569786677
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -92209,8 +91695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -92683,6 +92168,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 162778363}
   rightHandAttachTransform: {fileID: 1150317003}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1590459496
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -92744,8 +92231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -93436,6 +92922,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 703108005}
   rightHandAttachTransform: {fileID: 2055482784}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1631305665
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -93497,8 +92985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -94758,6 +94245,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 345304893}
   rightHandAttachTransform: {fileID: 1590384275}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1755973484
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -94819,8 +94308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -96452,6 +95940,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 2046294363}
   rightHandAttachTransform: {fileID: 361204382}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1861173831
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -96513,8 +96003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -96813,6 +96302,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 176106561}
   rightHandAttachTransform: {fileID: 862086943}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1861927787
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -96874,8 +96365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -97579,6 +97069,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 838415785}
   rightHandAttachTransform: {fileID: 1700852433}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1896377537
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -97640,8 +97132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -98273,6 +97764,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 141555104}
   rightHandAttachTransform: {fileID: 2044572345}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1915519343
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -98334,8 +97827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -98577,314 +98069,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 435086, guid: 55ceba30972af274f93bab1e36f18f51, type: 3}
   m_PrefabInstance: {fileID: 1927001019}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1927798565
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 56857004}
-    m_Modifications:
-    - target: {fileID: -8712924870032863444, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.68454504
-      objectReference: {fileID: 0}
-    - target: {fileID: -8712924870032863444, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.12707792
-      objectReference: {fileID: 0}
-    - target: {fileID: -8712924870032863444, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.45972323
-      objectReference: {fileID: 0}
-    - target: {fileID: -8712924870032863444, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5512749
-      objectReference: {fileID: 0}
-    - target: {fileID: -8712924870032863444, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 19.444
-      objectReference: {fileID: 0}
-    - target: {fileID: -8712924870032863444, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -54.692
-      objectReference: {fileID: 0}
-    - target: {fileID: -8712924870032863444, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 67.563
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8494328768516585249, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.7933545
-      objectReference: {fileID: 0}
-    - target: {fileID: -8494328768516585249, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.60702825
-      objectReference: {fileID: 0}
-    - target: {fileID: -8494328768516585249, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.031241123
-      objectReference: {fileID: 0}
-    - target: {fileID: -8494328768516585249, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.033604592
-      objectReference: {fileID: 0}
-    - target: {fileID: -8494328768516585249, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -253.962
-      objectReference: {fileID: 0}
-    - target: {fileID: -8494328768516585249, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -199.092
-      objectReference: {fileID: 0}
-    - target: {fileID: -8494328768516585249, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -199.286
-      objectReference: {fileID: 0}
-    - target: {fileID: -7965080492784997285, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99977213
-      objectReference: {fileID: 0}
-    - target: {fileID: -7965080492784997285, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.021350756
-      objectReference: {fileID: 0}
-    - target: {fileID: -7965080492784997285, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.0000005066395
-      objectReference: {fileID: 0}
-    - target: {fileID: -7965080492784997285, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000004172325
-      objectReference: {fileID: 0}
-    - target: {fileID: -7965080492784997285, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 2.447
-      objectReference: {fileID: 0}
-    - target: {fileID: -7965080492784997285, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7965080492784997285, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4952371131901738984, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4952371131901738984, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.0000000790254
-      objectReference: {fileID: 0}
-    - target: {fileID: -4952371131901738984, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.0000005364418
-      objectReference: {fileID: 0}
-    - target: {fileID: -4952371131901738984, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.00000003687837
-      objectReference: {fileID: 0}
-    - target: {fileID: -4952371131901738984, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4952371131901738984, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4952371131901738984, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 431247075847058747, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99144495
-      objectReference: {fileID: 0}
-    - target: {fileID: 431247075847058747, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.13052572
-      objectReference: {fileID: 0}
-    - target: {fileID: 431247075847058747, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.00000026822087
-      objectReference: {fileID: 0}
-    - target: {fileID: 431247075847058747, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.00000041723246
-      objectReference: {fileID: 0}
-    - target: {fileID: 431247075847058747, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -15
-      objectReference: {fileID: 0}
-    - target: {fileID: 431247075847058747, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 431247075847058747, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_Name
-      value: RightHand
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 5819900291352614659, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5819900291352614659, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.0000000790254
-      objectReference: {fileID: 0}
-    - target: {fileID: 5819900291352614659, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.0000005364418
-      objectReference: {fileID: 0}
-    - target: {fileID: 5819900291352614659, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.00000003687837
-      objectReference: {fileID: 0}
-    - target: {fileID: 5819900291352614659, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5819900291352614659, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5819900291352614659, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8970885712544478945, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.96804225
-      objectReference: {fileID: 0}
-    - target: {fileID: 8970885712544478945, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.018333962
-      objectReference: {fileID: 0}
-    - target: {fileID: 8970885712544478945, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.14033712
-      objectReference: {fileID: 0}
-    - target: {fileID: 8970885712544478945, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.20703547
-      objectReference: {fileID: 0}
-    - target: {fileID: 8970885712544478945, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 5.371
-      objectReference: {fileID: 0}
-    - target: {fileID: 8970885712544478945, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 15.383
-      objectReference: {fileID: 0}
-    - target: {fileID: 8970885712544478945, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -23.418
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1927798569}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1927798568}
-  m_SourcePrefab: {fileID: 100100000, guid: 56186ccf27ad7864681108ed88349071, type: 3}
---- !u!4 &1927798566 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-  m_PrefabInstance: {fileID: 1927798565}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1927798567 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 56186ccf27ad7864681108ed88349071, type: 3}
-  m_PrefabInstance: {fileID: 1927798565}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1927798568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927798567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 075baa14d771ba44a9fb38842bbbd625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HandAnimatorController
-  handNode: 5
---- !u!95 &1927798569
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927798567}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ccad93e767b9cec4ba5fbe73e11604fd, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1929230816
 GameObject:
   m_ObjectHideFlags: 0
@@ -99490,6 +98674,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 2019094347}
   rightHandAttachTransform: {fileID: 532081927}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1939816691
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -99551,8 +98737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -100108,6 +99293,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1711355783}
   rightHandAttachTransform: {fileID: 1048168578}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1971893591
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -100169,8 +99356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -100584,6 +99770,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 291027746}
   rightHandAttachTransform: {fileID: 1452035559}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1997094114
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -100645,8 +99833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -100995,6 +100182,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1685361286}
   rightHandAttachTransform: {fileID: 376282529}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &1998083411
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -101056,8 +100245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -101356,6 +100544,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 47906289}
   rightHandAttachTransform: {fileID: 12878092}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &2004527557
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -101417,8 +100607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -101717,6 +100906,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1287541742}
   rightHandAttachTransform: {fileID: 2051106567}
+  holdingHand: 4
+  isHeld: 0
 --- !u!54 &2016047293
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -101778,8 +100969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -103739,6 +102929,8 @@ MonoBehaviour:
   m_MaxAngularVelocityDelta: 20
   leftHandAttachTransform: {fileID: 1865006256}
   rightHandAttachTransform: {fileID: 1453865773}
+  holdingHand: 4
+  isHeld: 0
 --- !u!82 &2105971265
 AudioSource:
   m_ObjectHideFlags: 0
@@ -103870,8 +103062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea983492fc0b42aa18768dbaa2746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Haptics
-  leftHand: {fileID: 2147164520}
-  rightHand: {fileID: 953486225}
+  racketGrab: {fileID: 348648309}
   minVelocity: 0.5
   minHaptic: 0.1
   maxHaptic: 0.5
@@ -104415,8 +103606,8 @@ SceneRoots:
   - {fileID: 13009351}
   - {fileID: 1836118228}
   - {fileID: 1356800212}
+  - {fileID: 1447095615}
   - {fileID: 60728898}
-  - {fileID: 56857003}
   - {fileID: 1591645732}
   - {fileID: 1079413596}
   - {fileID: 375655425}
