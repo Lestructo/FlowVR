@@ -6,19 +6,21 @@ public class BallBasketFiller : MonoBehaviour
     public GameObject ballPrefab;
     public Transform basketCenter;
 
-    public float radius = 0.1f;       // half-width of the basket interior
-    public float spawnHeight = 0.3f;   // spawning Y offset above basket center
-    public float fillHeight = 0.3f;    // height at which basket is considered "full"
-    public float spawnDelay = 0.1f;    // time between spawns
+    [Header("Spawn Area")]
+    public float radius = 0.1f;        // half-width of spawn area inside the basket
+    public float spawnHeight = 0.3f;   // vertical height above basket center to spawn
 
-    public LayerMask ballMask;         // ONLY the Ball layer
-    public LayerMask handMask;         // Ignore Raycast layer (your hands)
+    [Header("Fill Detection")]
+    public float fillHeight = 0.3f;    // vertical height at which basket is considered "full"
+    public float fillThickness = 0.1f; // thickness of the fill detection box
+
+    [Header("Spawn Timing")]
+    public float spawnDelay = 0.1f;
 
     private bool spawning = false;
 
     void Update()
     {
-        // Only spawn if basket isn't full and no coroutine is running
         if (!IsBasketFull() && !spawning)
         {
             StartCoroutine(SpawnBall());
@@ -35,15 +37,6 @@ public class BallBasketFiller : MonoBehaviour
             Random.Range(-radius, radius)
         );
 
-        // SAFETY CHECK:
-        // If a hand is inside the spawn zone → do NOT spawn
-        if (Physics.CheckSphere(spawnPos, 0.1f, handMask))
-        {
-            spawning = false;
-            yield break;
-        }
-
-        // Safe to spawn
         Instantiate(ballPrefab, spawnPos, Quaternion.identity);
 
         yield return new WaitForSeconds(spawnDelay);
@@ -52,16 +45,14 @@ public class BallBasketFiller : MonoBehaviour
 
     bool IsBasketFull()
     {
-        // Detects if ANY ball on the Ball layer is in the upper "full" zone
+        // Checks if *any object with a collider* is in the upper fill zone
         return Physics.CheckBox(
             basketCenter.position + Vector3.up * fillHeight,
-            new Vector3(radius, 0.1f, radius),
-            Quaternion.identity,
-            ballMask
+            new Vector3(radius, fillThickness, radius),
+            Quaternion.identity
         );
     }
 
-    // Optional: draw gizmos to visualize basket detection zone
     void OnDrawGizmos()
     {
         if (basketCenter == null) return;
@@ -69,7 +60,7 @@ public class BallBasketFiller : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(
             basketCenter.position + Vector3.up * fillHeight,
-            new Vector3(radius * 2, 0.2f, radius * 2)
+            new Vector3(radius * 2, fillThickness * 2, radius * 2)
         );
     }
 }
