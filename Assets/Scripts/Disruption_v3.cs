@@ -21,16 +21,6 @@ public class RacketDisruption : MonoBehaviour
     {
         // Get ALL colliders on the racket (including deep children)
         FindAllRacketColliders();
-
-        if (debugLogs)
-        {
-            Debug.Log($"<color=cyan>RacketDisruption: Found {racketColliders.Count} colliders</color>");
-            foreach (Collider col in racketColliders)
-            {
-                string type = col.GetType().Name;
-                Debug.Log($"  - {col.name} ({type}, trigger: {col.isTrigger})");
-            }
-        }
     }
 
     void FindAllRacketColliders()
@@ -61,12 +51,9 @@ public class RacketDisruption : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (debugLogs)
-            Debug.Log($"<color=yellow>Collision: {name} hit {collision.gameObject.name} via {collision.collider.name}</color>");
 
         if (hasDisrupted)
         {
-            if (debugLogs) Debug.Log("Already disrupted - skipping");
             return;
         }
 
@@ -89,7 +76,6 @@ public class RacketDisruption : MonoBehaviour
         // Check if hitObject is a child of All_Balls
         if (hitObject.transform.IsChildOf(allBallsParent.transform))
         {
-            if (debugLogs) Debug.Log($"{hitObject.name} is child of {allBallsParent.name}");
             return true;
         }
 
@@ -105,7 +91,6 @@ public class RacketDisruption : MonoBehaviour
             parent = parent.parent;
         }
 
-        if (debugLogs) Debug.Log($"{hitObject.name} is NOT a ball");
         return false;
     }
 
@@ -126,12 +111,6 @@ public class RacketDisruption : MonoBehaviour
             yield break;
         }
 
-        if (debugLogs)
-        {
-            Debug.Log($"Racket colliders: {racketColliders.Count}");
-            Debug.Log($"Ball colliders: {allBallColliders.Count}");
-            Debug.Log($"Disabling collisions for {disableDuration}s...");
-        }
 
         // DISABLE COLLISIONS BETWEEN ALL RACKET AND ALL BALL COLLIDERS
         DisableCollisions(racketColliders, allBallColliders, true);
