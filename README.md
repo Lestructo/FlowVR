@@ -26,7 +26,7 @@ Flow State is a highly focused and immersive mental state associated with increa
 
 ## Technology Stack
 
-- Unity 2022+
+- Unity 
 - XR Interaction Toolkit
 - OpenXR
 - Meta Quest 3
