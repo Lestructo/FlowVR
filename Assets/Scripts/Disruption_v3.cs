@@ -8,8 +8,8 @@ public class RacketDisruption : MonoBehaviour
     public GameObject allBallsParent; // Drag the "All_Balls" GameObject here
 
     [Header("Timing")]
-    public float gracePeriod = 60f; // Time AFTER first hit before disruption starts
-    public float disableDuration = 15f; // How long collisions stay disabled
+    public float gracePeriod = 120f; // Time AFTER first hit before disruption starts
+    public float disableDuration = 30f; // How long collisions stay disabled
 
     [Header("Debug")]
     public bool debugLogs = true;
