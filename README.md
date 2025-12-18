@@ -35,6 +35,16 @@ Flow State is a highly focused and immersive mental state associated with increa
 
 ---
 
+## Running the Experience
+
+- Put on the Quest 3 and navigate to Apps -> Unknown Sources.
+- Launch FlowVR.
+- You will spawn on the tennis court with balls and the racket to your side.
+- Pick up the racket using the grip button and begin bouncing the tennis ball.
+- The disruption timer begins after your first successful bounce.
+
+---
+
 ## Core Interaction
 
 Users repeatedly bounce a **tennis ball on a racket** in a VR tennis court environment. This task was selected because it:
@@ -105,51 +115,11 @@ This repetitive motion serves as the primary method for inducing Flow State.
 
 ---
 
-## Current Issues
-
-- Moving the camera with the controller causes exponential brightness increase
-- Final version removes controller-based movement to avoid this issue
-
----
-
-## Development To-Do
-
-### Unity Project Setup
-- Create a clean Unity project
-- Import XR Interaction Toolkit and OpenXR
-- Verify Quest 3 build and deployment
-- Implement realistic tennis ball and racket physics
-- Add a tennis ball basket in front of the user
-
-### Interaction and Environment
-- Add grabbing and releasing interactions
-- Add tennis court environment
-- Implement racket vibration
-- Replace controller models with hand models
-- Implement grip-based holding system
-- Handle ball and racket loss during interaction
-
-### Flow Measurement and Disruption
-- Script controlled interruptions
-- Log interruption timestamps and event types
-- Measure completion time, accuracy, and idle time after disruption
-- Prepare CSV exports for analysis
-
-### User Testing
-- Design pilot study
-- Create short survey on immersion and stress
-- Define usability metrics (comfort, interaction, motion sickness)
-- Schedule and run pilot tests
-
-## Editor Fly Around
-https://youtu.be/EHX3z177bJQ
-
-### Documentation
+## Documentation
 - Maintain dated logs of setup, issues, and solutions
 - Track development progress and research findings
 
 ---
-
 
 ## License
 
