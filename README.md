@@ -141,6 +141,9 @@ This repetitive motion serves as the primary method for inducing Flow State.
 - Define usability metrics (comfort, interaction, motion sickness)
 - Schedule and run pilot tests
 
+## Editor Fly Around
+https://youtu.be/EHX3z177bJQ
+
 ### Documentation
 - Maintain dated logs of setup, issues, and solutions
 - Track development progress and research findings
